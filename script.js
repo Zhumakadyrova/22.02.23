@@ -39,3 +39,27 @@ for (let a =1; a<=10; a++) {
   listEl.style.borderCollapse = "inherit";
   example10.append(listEl);
 }
+
+
+let fruits = ["apple", "banana", "orange", "pear"];
+let example9 = document.createElement("ul");
+document.body.append(example9);
+for (let i = 0; i < fruits.length; i++) {
+  let listEl = document.createElement("li")
+  listEl.textContent = fruits[i];
+  example9.append(listEl);
+}
+
+let fruits1 = ["orange", "cucumber", "apple", "peach"];
+let example12 = document.createElement("ul");
+document.body.append(example12);
+for (let i =0; i < fruits1.length; i++) {
+  let listEl = document.createElement("li")
+  listEl.textContent = fruits1[i];
+  listEl.style.backgroundColor = "red";
+  example12.style.listStyleType = "none"
+  listEl.style.fontSize =" 30px";
+  listEl.style.fontStyle = "italic";
+
+  example12.append(listEl);
+}
